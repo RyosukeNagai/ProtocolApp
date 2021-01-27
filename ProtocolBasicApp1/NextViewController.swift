@@ -7,6 +7,14 @@
 
 import UIKit
 
+//仕様書
+protocol CatchProtocol {
+    
+    //規則を決めるどのメソッドなのか記述
+    func catchData(count:Int)
+    
+}
+
 class NextViewController: UIViewController {
     
     //カウントアップラベル
