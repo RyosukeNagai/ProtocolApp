@@ -8,12 +8,26 @@
 import UIKit
 
 class NextViewController: UIViewController {
-
+    
+    //カウントアップラベル
+    @IBOutlet weak var label: UILabel!
+    
+    var count:Int = 0
+     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func plusAction(_ sender: Any) {
+        
+        count = count + 1
+        //キャスト
+        label.text = String(count)
+        
+    }
+    
     
 
     /*
